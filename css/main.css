@@ -128,7 +128,7 @@ footer{
 } */
 /* Grid styles */
 .container {
-  max-width: 124 5px;
+  max-width: 1245px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -201,4 +201,11 @@ select:-webkit-autofill:focus {
   margin-left: -10000px;
   background: transparent;
   font-size: 0;
+}
+
+.root {
+  --context-title: #157F1F;
+  --text-color: #fff;
+  --card-color: #2b2828;
+  --body-color: #000;
 }/*# sourceMappingURL=main.css.map */
