@@ -14,6 +14,7 @@
 /* Links */
 a, a:link, a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -203,9 +204,34 @@ select:-webkit-autofill:focus {
   font-size: 0;
 }
 
-.root {
-  --context-title: #157F1F;
-  --text-color: #fff;
-  --card-color: #2b2828;
-  --body-color: #000;
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Inconsolata", monospace;
+}
+
+.header__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20.5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  max-width: 146px;
+}
+
+.menu__list {
+  display: flex;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+}
+
+.menu__ancore-link {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */
