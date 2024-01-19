@@ -31,4 +31,21 @@
     font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
+    transition: 0.5s;
+}
+
+.menu__ancore-link:hover{
+    color: $context-title;
+}
+.menu__ancore-link:active{
+    color: $link-active-color
+}
+
+
+// adaptive //
+
+@media (max-width:768px) {
+    .menu__ancore-link{
+        transition: 0ms;
+    }
 }
