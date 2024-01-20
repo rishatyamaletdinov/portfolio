@@ -237,16 +237,11 @@ body {
   transition: 0.5s;
 }
 
-.menu__ancore-link:hover {
-  color: #157F1F;
+@media (hover: hover) {
+  .menu__ancore-link:hover {
+    color: #157F1F;
+  }
 }
-
 .menu__ancore-link:active {
   color: #19512D;
-}
-
-@media (max-width: 768px) {
-  .menu__ancore-link {
-    transition: 0ms;
-  }
 }/*# sourceMappingURL=main.css.map */
