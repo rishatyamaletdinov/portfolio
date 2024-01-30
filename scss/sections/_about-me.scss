@@ -1,0 +1,24 @@
+.about-me {
+    padding: 64px ;
+}
+
+.about-me__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.about-hero {
+    max-width: 904px;
+}
+
+.about-hero__text {
+    color: $text-color;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.picture-logo {
+    width: 101px;
+}
