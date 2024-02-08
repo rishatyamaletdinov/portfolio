@@ -4,10 +4,11 @@
 @import'./base/base';
 
 // blocks
-
+@import './blocks/titles';
 // sections
 @import './sections/header';
 @import'./sections/welcome';
 @import './sections/about-me';
+@import './sections/my-skills';
 @import './sections/footer';
 
