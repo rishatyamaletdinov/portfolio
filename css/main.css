@@ -374,10 +374,65 @@ body {
   padding: 61px 0 58px;
   background-color: #2b2828;
 }
+@media (hover: hover) {
+  .skill-cards__btn--html:hover .card-icon {
+    fill: #FC490B;
+    filter: drop-shadow(0 0 2px #FC490B);
+  }
+}
+.skill-cards__btn--html:active .card-icon {
+  fill: #FC490B;
+  filter: drop-shadow(0 0 2px #FC490B);
+}
+@media (hover: hover) {
+  .skill-cards__btn--css:hover .card-icon {
+    fill: #2196F4;
+    filter: drop-shadow(0 0 2px #2196F4);
+  }
+}
+.skill-cards__btn--css:active .card-icon {
+  fill: #2196F4;
+  filter: drop-shadow(0 0 2px #2196F4);
+}
+@media (hover: hover) {
+  .skill-cards__btn--js:hover .card-icon {
+    fill: #FFDF00;
+    filter: drop-shadow(0 0 2px #FFDF00);
+  }
+}
+.skill-cards__btn--js:active .card-icon {
+  fill: #FFDF00;
+  filter: drop-shadow(0 0 2px #FFDF00);
+}
+@media (hover: hover) {
+  .skill-cards__btn--scss:hover .card-icon {
+    fill: #CA669B;
+    filter: drop-shadow(0 0 2px #CA669B);
+  }
+}
+.skill-cards__btn--scss:active .card-icon {
+  fill: #CA669B;
+  filter: drop-shadow(0 0 2px #CA669B);
+}
+@media (hover: hover) {
+  .skill-cards__btn--git:hover .card-icon {
+    fill: #F25234;
+    filter: drop-shadow(0 0 2px #F25234);
+  }
+}
+.skill-cards__btn--git:active .card-icon {
+  fill: #F25234;
+  filter: drop-shadow(0 0 2px #F25234);
+}
 
 .skill-cards__img {
   display: inline-block;
   max-height: 128px;
+}
+
+.card-icon {
+  fill: #F0E3CA;
+  transition: 0.5s;
 }
 
 .skill-cards__title {
