@@ -1,0 +1,19 @@
+@mixin card-hover($card-hover-color){
+    @media (hover:hover){
+        &:hover{
+            .card-icon{
+                fill: $card-hover-color;
+                filter: drop-shadow(0 0 2px $card-hover-color);
+            }
+        }
+    }
+}
+
+@mixin card-active($card-active-color){
+    &:active{
+        .card-icon{
+                fill: $card-active-color;
+                filter: drop-shadow(0 0 2px $card-active-color);
+        }
+    }
+}
