@@ -20,6 +20,7 @@
 }
 
 .link-holder-img{
+    fill: $text-color;
     width: 32px;
     height: 32px;
 }
@@ -46,6 +47,7 @@
     &:not(:last-child){
         margin-bottom: 32px;
     }
+    @include contacts-link-active($context-title, $text-color);
 }
 
 .socials__link {
@@ -54,7 +56,13 @@
     gap: 16px;
 }
 
+.link-img{
+    transition: 0.5s;
+}
+
 .link-text{
+    color: $context-title;
     font-weight: 400;
     font-size: 24px;
+    transition: 0.5s;
 }

@@ -17,3 +17,17 @@
         }
     }
 }
+
+@mixin contacts-link-hover($color-img, $text-color){
+    @media (hover:hover) {
+        &:hover{
+            .link-img{
+                fill: $color-img;
+            }
+
+            .link-text{
+                color: $text-color;
+            }
+        }
+    }
+}

@@ -541,6 +541,7 @@ body {
 }
 
 .link-holder-img {
+  fill: #fff;
   width: 32px;
   height: 32px;
 }
@@ -562,6 +563,14 @@ body {
 .socials__link-holder:not(:last-child) {
   margin-bottom: 32px;
 }
+@media (hover: hover) {
+  .socials__link-holder:hover .link-img {
+    fill: #157F1F;
+  }
+  .socials__link-holder:hover .link-text {
+    color: #fff;
+  }
+}
 
 .socials__link {
   display: flex;
@@ -569,7 +578,13 @@ body {
   gap: 16px;
 }
 
+.link-img {
+  transition: 0.5s;
+}
+
 .link-text {
+  color: #157F1F;
   font-weight: 400;
   font-size: 24px;
+  transition: 0.5s;
 }/*# sourceMappingURL=main.css.map */
