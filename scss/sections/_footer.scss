@@ -47,7 +47,7 @@
     &:not(:last-child){
         margin-bottom: 32px;
     }
-    @include contacts-link-active($context-title, $text-color);
+    @include contacts-link-hover($context-title, $text-color);
 }
 
 .socials__link {
