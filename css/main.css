@@ -475,7 +475,7 @@ body {
   }
 }
 .about-me {
-  padding: 64px;
+  padding: 64px 0;
 }
 
 .about-me__content {
@@ -505,8 +505,20 @@ body {
 
 .picture-logo {
   width: 101px;
+  height: 101px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
+@media (max-width: 768px) {
+  .about-hero {
+    max-width: 443px;
+  }
+  .about-hero__text {
+    font-size: 21px;
+    line-height: 1.2;
+  }
+}
 .my-skills {
   padding: 64px 0;
 }
