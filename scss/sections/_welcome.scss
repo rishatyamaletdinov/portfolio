@@ -1,7 +1,6 @@
 .welcome{
     padding: 72.5px 0;
 }
-
 .welcome__content{
     display: flex;
     justify-content: space-between;
@@ -74,5 +73,26 @@
         &--third {
             background-color: $shadow-grey;
             transform: translate(-50%, -50%) rotate(-24deg);
+        }
+    }
+
+    @media (max-width:768px) {
+        .welcome{
+            padding: 128px 0;
+        }
+
+        .welcome__content{
+            flex-direction: column;
+            gap: 64px;
+        }
+
+        .hero{
+            .main-title{
+                margin-bottom: 9px;
+            }
+
+            .main-subtitle{
+                margin-bottom: 17px;
+            }
         }
     }
