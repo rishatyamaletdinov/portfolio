@@ -76,7 +76,31 @@
         }
     }
 
-    @media (max-width:768px) {
+    @media (max-width:1150px) {
+        .picture-avatar{
+            width: 500px;
+            height: 350px;
+        }
+
+        .picture-avatar__shadow{
+            width: 250px;
+            height: 250px;
+        }
+
+        .hero{
+            .main-title{
+                margin-bottom: 9px;
+                font-size: 52px;
+            }
+
+            .main-subtitle{
+                margin-bottom: 17px;
+                font-size: 34px;
+            }
+        }
+    }
+
+    @media (max-width:950px) {
         .welcome{
             padding: 128px 0;
         }
@@ -89,10 +113,22 @@
         .hero{
             .main-title{
                 margin-bottom: 9px;
+                font-size: 64px;
             }
 
             .main-subtitle{
                 margin-bottom: 17px;
+                font-size: 40px;
             }
+        }
+
+        .picture-avatar{
+            width: 629px;
+            height: 575px;
+        }
+
+        .picture-avatar__shadow{
+            width: 374px;
+            height: 374px;
         }
     }
