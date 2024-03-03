@@ -1,5 +1,5 @@
 .about-me {
-    padding: 64px ;
+    padding: 64px 0;
 }
 
 .about-me__content {
@@ -21,4 +21,28 @@
 
 .picture-logo {
     width: 101px;
+    height: 101px;
+    flex-shrink: 0;
+}
+
+@media (max-width:768px) {
+    .about-hero{
+        max-width: 443px;
+    }
+
+    .about-hero__text{
+        font-size: 21px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width:450px){
+    .about-me__content{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .about-hero__description{
+        max-width: 322px;
+    }
 }

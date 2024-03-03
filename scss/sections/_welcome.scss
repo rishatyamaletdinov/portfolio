@@ -1,7 +1,6 @@
 .welcome{
     padding: 72.5px 0;
 }
-
 .welcome__content{
     display: flex;
     justify-content: space-between;
@@ -74,5 +73,97 @@
         &--third {
             background-color: $shadow-grey;
             transform: translate(-50%, -50%) rotate(-24deg);
+        }
+    }
+
+    @media (max-width:1150px) {
+        .picture-avatar{
+            width: 500px;
+            height: 350px;
+        }
+
+        .picture-avatar__shadow{
+            width: 250px;
+            height: 250px;
+        }
+
+        .hero{
+            .main-title{
+                margin-bottom: 9px;
+                font-size: 52px;
+            }
+
+            .main-subtitle{
+                margin-bottom: 17px;
+                font-size: 34px;
+            }
+        }
+    }
+
+    @media (max-width:950px) {
+        .welcome{
+            padding: 128px 0;
+        }
+
+        .welcome__content{
+            flex-direction: column;
+            gap: 64px;
+        }
+
+        .hero{
+            .main-title{
+                margin-bottom: 9px;
+                font-size: 64px;
+            }
+
+            .main-subtitle{
+                margin-bottom: 17px;
+                font-size: 40px;
+            }
+        }
+
+        .picture-avatar{
+            width: 629px;
+            height: 575px;
+        }
+
+        .picture-avatar__shadow{
+            width: 374px;
+            height: 374px;
+        }
+    }
+
+    @media (max-width:450px) {
+        .welcome{
+            padding: 141.5px 0;
+        }
+
+        .hero{
+            max-width: 314px;
+            margin: 0 19px;
+
+            .main-title{
+                font-size: 40px;
+                margin-bottom: 16px;
+            }
+
+            .main-subtitle{
+                font-size: 32px;
+                margin-bottom: 16px;
+            }
+
+            .hero__text{
+                font-size: 24px;
+            }
+        }
+
+        .picture-avatar{
+            width: 413px;
+            height: 430px;
+        }
+
+        .picture-avatar__shadow{
+            width: 250px;
+            height: 250px;
         }
     }

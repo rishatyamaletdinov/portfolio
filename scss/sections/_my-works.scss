@@ -17,9 +17,27 @@
 .row-cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
+@media (max-width:768px) {
+    .row-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
+@media (max-width:450px) {
+    .my-works{
+        padding: 81px 0;
+    }
 
+    .project-card__top{
+        padding: 20px 0 16px;
+    }
 
+    .project-card__description{
+        font-size: 18px;
+    }
+}

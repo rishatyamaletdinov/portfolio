@@ -47,7 +47,7 @@
     &:not(:last-child){
         margin-bottom: 32px;
     }
-    @include contacts-link-active($context-title, $text-color);
+    @include contacts-link-hover($context-title, $text-color);
 }
 
 .socials__link {
@@ -65,4 +65,40 @@
     font-weight: 400;
     font-size: 24px;
     transition: 0.5s;
+}
+
+@media(max-width:768px){
+    .footer__content{
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .text-and-logo{
+        max-width: 339px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .context-title{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 32px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .footer{
+        padding: 47px 0;
+    }
+
+    .socials{
+        flex-direction: column;
+    }
 }
