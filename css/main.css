@@ -911,4 +911,15 @@ body {
     font-size: 32px;
     font-weight: 400;
   }
+}
+@media (max-width: 450px) {
+  .footer {
+    padding: 47px 0;
+  }
+  .socials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */
