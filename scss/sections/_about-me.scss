@@ -35,3 +35,14 @@
         line-height: 1.2;
     }
 }
+
+@media (max-width:450px){
+    .about-me__content{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .about-hero__description{
+        max-width: 322px;
+    }
+}
