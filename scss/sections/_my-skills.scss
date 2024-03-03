@@ -103,6 +103,9 @@
 }
 
 @media (max-width:450px) {
+    .my-skills{
+        padding: 61px 0;
+    }
     .skill-cards{
         flex-direction: column;
         align-items: center;

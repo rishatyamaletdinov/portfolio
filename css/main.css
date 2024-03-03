@@ -710,6 +710,9 @@ body {
 }
 
 @media (max-width: 450px) {
+  .my-skills {
+    padding: 61px 0;
+  }
   .skill-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -771,6 +774,17 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media (max-width: 450px) {
+  .my-works {
+    padding: 81px 0;
+  }
+  .project-card__top {
+    padding: 20px 0 16px;
+  }
+  .project-card__description {
+    font-size: 18px;
   }
 }
 .footer {
