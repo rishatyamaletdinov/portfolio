@@ -464,12 +464,9 @@ body {
   width: 629px;
   height: 575px;
   position: relative;
-}
-.picture-avatar__img {
-  height: auto;
-  width: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  background-image: url(../../img/pictures/illustrations-desk.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .picture-avatar__shadow {
@@ -573,11 +570,13 @@ body {
   }
 }
 @media (max-width: 450px) {
+  .welcome {
+    padding-bottom: 0;
+  }
   .picture-avatar {
     max-width: 100%;
-  }
-  .picture-avatar__img {
-    width: 100%;
+    background-image: url(../../img/pictures/illustrations-desk-mobile.png);
+    height: 350px;
   }
   .hero {
     max-width: 100%;
@@ -606,9 +605,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 32px;
-     -moz-column-gap: 32px;
-          column-gap: 32px;
+  gap: 32px;
 }
 
 .about-hero {
@@ -629,8 +626,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  .about-hero {
-    max-width: 443px;
+  .about-hero__description {
+    max-width: 100%;
   }
   .about-hero__text {
     font-size: 21px;
@@ -643,10 +640,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 32px;
-  }
-  .about-hero__description {
-    max-width: 322px;
+    text-align: center;
   }
 }
 .my-skills {

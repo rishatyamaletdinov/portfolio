@@ -42,12 +42,9 @@
         width: 629px;
         height: 575px;
         position: relative;
-
-        &__img{
-            height: auto;
-            width: auto;
-            object-fit: contain;
-        }
+        background-image: url(../../img/pictures/illustrations-desk.png);
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .picture-avatar__shadow {
@@ -168,13 +165,13 @@
     }
 
     @media (max-width:450px) {
+        .welcome{
+            padding-bottom: 0;
+        }
         .picture-avatar{
             max-width: 100%;
-            // height: auto;
-
-            &__img{
-                width: 100%;
-            }
+            background-image: url(../../img/pictures/illustrations-desk-mobile.png);
+            height: 350px;
         }
 
         .hero{
