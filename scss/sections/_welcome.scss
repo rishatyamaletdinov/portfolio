@@ -42,7 +42,6 @@
         width: 629px;
         height: 575px;
         position: relative;
-        background-color: aqua;
 
         &__img{
             height: auto;
@@ -163,16 +162,19 @@
         }
 
         .picture-avatar__shadow{
-            width: 250px;
-            height: 250px;
+            width: 230px;
+            height: 230px;
         }
     }
 
     @media (max-width:450px) {
         .picture-avatar{
-            width: 100%;
+            max-width: 100%;
             // height: auto;
 
+            &__img{
+                width: 100%;
+            }
         }
 
         .hero{
