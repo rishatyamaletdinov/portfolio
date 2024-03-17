@@ -3,9 +3,12 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 4;
+    background-color: $header-color;
+    backdrop-filter: blur(5px);
 
     .logo{
-        z-index: 2;
+        z-index: 5;
     }
     &__mobile-container{
         display: none;
@@ -23,10 +26,6 @@
     
 }
 
-body{
-    height: 2000px;
-}
-
 .header__content {
     max-width: 1200px;
     margin: 0 auto;
@@ -34,6 +33,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     
     @media (max-width: 768px) {
         flex-direction: column;

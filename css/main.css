@@ -306,9 +306,13 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 .header .logo {
-  z-index: 2;
+  z-index: 5;
 }
 .header__mobile-container {
   display: none;
@@ -320,10 +324,6 @@ body {
   .header__mobile-container {
     display: block;
   }
-}
-
-body {
-  height: 2000px;
 }
 
 .header__content {
@@ -458,13 +458,16 @@ body {
 }
 
 .picture-avatar {
-  display: inline-block;
   width: 629px;
   height: 575px;
   position: relative;
+  background-color: aqua;
 }
-.picture-avatar img {
+.picture-avatar__img {
   height: auto;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .picture-avatar__shadow {
@@ -539,7 +542,7 @@ body {
     height: 374px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .welcome {
     padding: 141.5px 0;
   }
@@ -565,6 +568,23 @@ body {
   .picture-avatar__shadow {
     width: 250px;
     height: 250px;
+  }
+}
+@media (max-width: 450px) {
+  .picture-avatar {
+    width: 100%;
+  }
+  .hero {
+    max-width: 100%;
+  }
+  .hero .main-title {
+    font-size: 36px;
+  }
+  .hero .main-subtitle {
+    font-size: 28px;
+  }
+  .hero .hero__text {
+    font-size: 18px;
   }
 }
 .about-me {
