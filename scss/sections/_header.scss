@@ -21,9 +21,9 @@
 
         &__mobile-container{
             display: block;
-        }
     }
     
+}
 }
 
 .header__content {
@@ -44,7 +44,7 @@
     @media (max-width:630px){
         flex-direction: row;
         gap: 0;
-        padding: 16px 16px;
+        padding: 12px 16px;
     }
 }
 
