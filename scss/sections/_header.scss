@@ -64,6 +64,12 @@
         height: 100vh;
         background-color: $bg-menu;
         transform: translateY(-100%);
+        transition: 0.5s;
+
+        &.open {
+            transform: translateY(0);
+
+        }
     }
 }
 

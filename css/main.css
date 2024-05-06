@@ -308,6 +308,7 @@ body {
 .burger {
   width: 48px;
   height: 48px;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,6 +417,12 @@ body {
     background-color: #1B1A17;
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .menu.open {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
