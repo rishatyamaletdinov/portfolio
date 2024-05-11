@@ -1,5 +1,8 @@
-const BURGER = document.querySelector("#burger");
+const burger = document.querySelector("#burger");
 const mobileMenu = document.querySelector("#mobile-menu");
-BURGER.addEventListener("click", () => {
+burger.addEventListener("click", () => {
     mobileMenu.classList.toggle("open");
+    burger.classList.toggle("active")
 });
+
+

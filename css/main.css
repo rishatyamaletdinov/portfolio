@@ -325,6 +325,8 @@ body {
   height: 4px;
   background-color: #fff;
   position: relative;
+  -webkit-transition: background-color 0.3s 0s;
+  transition: background-color 0.3s 0s;
 }
 .burger__line:before, .burger__line:after {
   content: "";
@@ -337,9 +339,41 @@ body {
 }
 .burger__line::before {
   top: -10px;
+  -webkit-transition: top 0.3s 0.3s, -webkit-transform 0.3s;
+  transition: top 0.3s 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, top 0.3s 0.3s;
+  transition: transform 0.3s, top 0.3s 0.3s, -webkit-transform 0.3s;
 }
 .burger__line::after {
   bottom: -10px;
+  -webkit-transition: bottom 0.3s 0.3s, -webkit-transform 0.3s;
+  transition: bottom 0.3s 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, bottom 0.3s 0.3s;
+  transition: transform 0.3s, bottom 0.3s 0.3s, -webkit-transform 0.3s;
+}
+
+.burger.active .burger__line::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: top 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: top 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: top 0.3s, transform 0.3s 0.3s;
+  transition: top 0.3s, transform 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+}
+.burger.active .burger__line::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: bottom 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: bottom 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: bottom 0.3s, transform 0.3s 0.3s;
+  transition: bottom 0.3s, transform 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+}
+.burger.active .burger__line {
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s 0s;
+  transition: background-color 0.3s 0s;
 }
 
 .header {
