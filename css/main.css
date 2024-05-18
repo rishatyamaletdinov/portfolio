@@ -1085,10 +1085,23 @@ body {
             flex-direction: column;
   }
 }
+.reviews {
+  padding: 0 0 64px;
+}
+.reviews .context-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
 .slider {
   width: 80%;
   margin: 0 auto;
   position: relative;
+}
+@media (max-width: 425px) {
+  .slider {
+    width: 100%;
+  }
 }
 
 .slick-list {
@@ -1162,6 +1175,11 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+@media (max-width: 425px) {
+  .slider__arrow {
+    display: none !important;
+  }
 }
 
 .slider__arrow--left {
