@@ -1170,4 +1170,32 @@ body {
 
 .slider__arrow--right {
   right: -50px;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -20px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: #fff solid 2px;
+}
+
+.slick-active button {
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */
