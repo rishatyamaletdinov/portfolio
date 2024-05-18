@@ -1145,6 +1145,7 @@ body {
   height: 50px;
   overflow: hidden;
   border-radius: 50%;
+  border: 2px #157F1F solid;
 }
 
 .slider__slide-bottom {
