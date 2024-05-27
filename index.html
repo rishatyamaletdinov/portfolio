@@ -15,6 +15,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
    <script src="./js/burger.js" defer="defer"></script>
+   <script src="./js/cards.js" defer="defer"></script>
    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer = "defer"></script>
    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer = "defer"></script>
    <script src="./js/slider.js" defer = "defer"></script>
@@ -180,57 +181,74 @@
          </div>
       </section>
 
-      <section class="my-skills">
+      <section class="my-skills" id="section-skills">
          <div class="container">
             <div class="my-skills__content">
                <h6 class="context-title">
                   my skills
                </h6>
 
-               <div class="skill-cards">
-                  <button class="skill-cards__btn skill-cards__btn--html">
-                     <span class="skill-cards__img">
-                        <svg class="card-icon">
-                           <use xlink:href = "#html"></use>
-                       </svg>
+               <div class="skill-cards" >
+                  <button class="skill-cards__btn skill-cards__btn--html" data-card-skill>
+                     <span class="skill-cards__front">
+                        <span class="skill-cards__img">
+                           <svg class="card-icon">
+                              <use xlink:href = "#html"></use>
+                           </svg>
+                        </span>
+                        <span class="skill-cards__title">HTML5</span>
                      </span>
-                     <span class="skill-cards__title">HTML5</span>
+                     <span class="skill-cards__back">
+
+                     </span>
                   </button>
 
-                  <button class="skill-cards__btn skill-cards__btn--css">
-                     <span class="skill-cards__img">
-                        <svg class="card-icon">
-                           <use xlink:href = "#css"></use>
-                       </svg>
+                  <button class="skill-cards__btn skill-cards__btn--css" data-card-skill>
+                     <span class="skill-cards__front">
+                        <span class="skill-cards__img">
+                           <svg class="card-icon">
+                              <use xlink:href = "#css"></use>
+                          </svg>
+                        </span>
+                        <span class="skill-cards__title">CSS3</span>
                      </span>
-                     <span class="skill-cards__title">CSS3</span>
+                     <span class="skill-cards__back"></span>
                   </button>
 
-                  <button class="skill-cards__btn skill-cards__btn--js">
-                     <span class="skill-cards__img">
-                        <svg class="card-icon">
-                           <use xlink:href = "#js"></use>
-                       </svg>
+                  <button class="skill-cards__btn skill-cards__btn--js" data-card-skill>
+                     <span class="skill-cards__front">
+                        <span class="skill-cards__img">
+                           <svg class="card-icon">
+                              <use xlink:href = "#js"></use>
+                          </svg>
+                        </span>
+                        <span class="skill-cards__title">JavaScript</span>
                      </span>
-                     <span class="skill-cards__title">JavaScript</span>
+                     <span class="skill-cards__back"></span>
                   </button>
 
-                  <button class="skill-cards__btn skill-cards__btn--scss">
-                     <span class="skill-cards__img">
-                        <svg class="card-icon">
-                           <use xlink:href = "#scss"></use>
-                        </svg>
+                  <button class="skill-cards__btn skill-cards__btn--scss" data-card-skill>
+                     <span class="skill-cards__front">
+                        <span class="skill-cards__img">
+                           <svg class="card-icon">
+                              <use xlink:href = "#scss"></use>
+                           </svg>
+                        </span>
+                        <span class="skill-cards__title">SCSS</span>
                      </span>
-                     <span class="skill-cards__title">SCSS</span>
+                     <span class="skill-cards__back"></span>
                   </button>
 
-                  <button class="skill-cards__btn skill-cards__btn--git">
-                     <span class="skill-cards__img">
-                        <svg class="card-icon">
-                           <use xlink:href = "#git"></use>
-                        </svg>
+                  <button class="skill-cards__btn skill-cards__btn--git" data-card-skill>
+                     <span class="skill-cards__front">
+                        <span class="skill-cards__img">
+                           <svg class="card-icon">
+                              <use xlink:href = "#git"></use>
+                           </svg>
+                        </span>
+                        <span class="skill-cards__title">Git</span>
                      </span>
-                     <span class="skill-cards__title">Git</span>
+                     <span class="skill-cards__backb"></span>
                   </button>
                </div>
             </div>
@@ -474,3 +492,8 @@
 </body>
 
 </html>
+
+<!-- TO DO: -->
+<!-- пофиксить размер иконки и текста в карточках скилов -->
+<!-- прописать стили для карточки в активе -->
+<!-- написать скрипт для карточек через EVENT -->
