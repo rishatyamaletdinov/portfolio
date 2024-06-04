@@ -17,11 +17,11 @@
     gap: 16px;
 }
 
-.skill-cards__btn {
+.skill-card-button {
     width: 200px;
     height: 300px;
     position: relative;
-
+    
     &__front,
     &__back{
         width: 100%;
@@ -29,9 +29,12 @@
         overflow: hidden;
         backface-visibility: hidden;
         position: absolute;
+        top: 0;
+        left: 0;
         transition: transform 1s;
+        border-radius: 10px;
     }
-
+    
     &__front{
         display: flex;
         flex-direction: column;
@@ -39,7 +42,8 @@
         justify-content: center;
         gap: 16px;
         transform: perspective(600px) rotateY(0deg);
-        background-color: rgb(51, 47, 47);
+        padding: 61px 0 58px;
+        background-color: $card-color;  
     }
 
     &__back{
@@ -47,6 +51,23 @@
         color: rgb(255, 255, 255);
         background-color: rgb(34, 85, 179);
         transform: perspective(600px) rotateY(180deg);
+    }
+
+    &__img{
+        display: inline-block;
+        max-height: 128px;
+
+        .card-icon {
+            fill: #F0E3CA;
+            transition: 0.5s;
+        }
+    }
+
+    &__title {
+        font-family: "Inconsolata", monospace;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 1.3;
     }
 
     &.active{
@@ -67,26 +88,14 @@
         }
     }
 
-
-}
-
-
-
-.skill-cards__btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    max-width: 200px;
-    width: 100%;
-    border-radius: 10px;
-    padding: 61px 0 58px;
-    background-color: $card-color;      
-
     &--html {
         @include card-hover($html-color);
         @include card-active($html-color);
+
+        .card-icon {
+            width: 128px;
+            height: 132px;
+        }
 
         @media (max-width:450px) {
             .card-icon{
@@ -98,6 +107,11 @@
     &--css {
         @include card-hover($css-color);
         @include card-active($css-color);
+
+        .card-icon {
+            width: 128px;
+            height: 132px;
+        }
 
         @media (max-width:450px) {
             .card-icon{
@@ -141,22 +155,6 @@
     }
 }
 
-.skill-cards__img {
-    display: inline-block;
-    max-height: 128px;
-}
-
-.card-icon {
-    fill: #F0E3CA;
-    transition: 0.5s;
-}
-.skill-cards__title {
-    font-family: "Inconsolata", monospace;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 1.3;
-}
-
 @media (max-width:450px) {
     .my-skills{
         padding: 61px 0;
@@ -166,20 +164,20 @@
         align-items: center;
     }
 
-    .skill-cards__btn{
+    .skill-card-button{
         flex-direction: row;
         justify-content: left;
         max-width: 285px;
         padding-left: 32px;
         padding-top: 14px;
         padding-bottom: 14px;
-    }
 
-    .skill-cards__img {
-        max-height: 32px;
-    }
-
-    .skill-cards__title{
-        font-size: 24px;
+        &__img {
+            max-height: 32px;
+        }
+    
+        &__title{
+            font-size: 24px;
+        }
     }
 }

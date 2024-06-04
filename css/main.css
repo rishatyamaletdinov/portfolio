@@ -747,24 +747,27 @@ body {
   gap: 16px;
 }
 
-.skill-cards__btn {
+.skill-card-button {
   width: 200px;
   height: 300px;
   position: relative;
 }
-.skill-cards__btn__front, .skill-cards__btn__back {
+.skill-card-button__front, .skill-card-button__back {
   width: 100%;
   height: 100%;
   overflow: hidden;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: absolute;
+  top: 0;
+  left: 0;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
+  border-radius: 10px;
 }
-.skill-cards__btn__front {
+.skill-card-button__front {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,16 +784,32 @@ body {
   gap: 16px;
   -webkit-transform: perspective(600px) rotateY(0deg);
           transform: perspective(600px) rotateY(0deg);
-  background-color: rgb(51, 47, 47);
+  padding: 61px 0 58px;
+  background-color: #2b2828;
 }
-.skill-cards__btn__back {
+.skill-card-button__back {
   position: absolute;
   color: rgb(255, 255, 255);
   background-color: rgb(34, 85, 179);
   -webkit-transform: perspective(600px) rotateY(180deg);
           transform: perspective(600px) rotateY(180deg);
 }
-.skill-cards__btn.active {
+.skill-card-button__img {
+  display: inline-block;
+  max-height: 128px;
+}
+.skill-card-button__img .card-icon {
+  fill: #F0E3CA;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.skill-card-button__title {
+  font-family: "Inconsolata", monospace;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.3;
+}
+.skill-card-button.active {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -800,143 +819,111 @@ body {
   min-height: 400px;
   z-index: 3;
 }
-.skill-cards__btn.active .skill-cards__front {
+.skill-card-button.active .skill-cards__front {
   -webkit-transform: perspective(600px) rotateY(-180deg);
           transform: perspective(600px) rotateY(-180deg);
 }
-.skill-cards__btn.active .skill-cards__back {
+.skill-card-button.active .skill-cards__back {
   -webkit-transform: perspective(600px) rotateY(0deg);
           transform: perspective(600px) rotateY(0deg);
 }
-
-.skill-cards__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 16px;
-  max-width: 200px;
-  width: 100%;
-  border-radius: 10px;
-  padding: 61px 0 58px;
-  background-color: #2b2828;
-}
 @media (hover: hover) {
-  .skill-cards__btn--html:hover .card-icon {
+  .skill-card-button--html:hover .card-icon {
     fill: #FC490B;
     -webkit-filter: drop-shadow(0 0 2px #FC490B);
             filter: drop-shadow(0 0 2px #FC490B);
   }
 }
-.skill-cards__btn--html:active .card-icon {
+.skill-card-button--html:active .card-icon {
   fill: #FC490B;
   -webkit-filter: drop-shadow(0 0 2px #FC490B);
           filter: drop-shadow(0 0 2px #FC490B);
 }
+.skill-card-button--html .card-icon {
+  width: 128px;
+  height: 132px;
+}
 @media (max-width: 450px) {
-  .skill-cards__btn--html .card-icon {
+  .skill-card-button--html .card-icon {
     max-height: 32px;
     width: 28px;
   }
 }
 @media (hover: hover) {
-  .skill-cards__btn--css:hover .card-icon {
+  .skill-card-button--css:hover .card-icon {
     fill: #2196F4;
     -webkit-filter: drop-shadow(0 0 2px #2196F4);
             filter: drop-shadow(0 0 2px #2196F4);
   }
 }
-.skill-cards__btn--css:active .card-icon {
+.skill-card-button--css:active .card-icon {
   fill: #2196F4;
   -webkit-filter: drop-shadow(0 0 2px #2196F4);
           filter: drop-shadow(0 0 2px #2196F4);
 }
+.skill-card-button--css .card-icon {
+  width: 128px;
+  height: 132px;
+}
 @media (max-width: 450px) {
-  .skill-cards__btn--css .card-icon {
+  .skill-card-button--css .card-icon {
     max-height: 32px;
     width: 28px;
   }
 }
 @media (hover: hover) {
-  .skill-cards__btn--js:hover .card-icon {
+  .skill-card-button--js:hover .card-icon {
     fill: #FFDF00;
     -webkit-filter: drop-shadow(0 0 2px #FFDF00);
             filter: drop-shadow(0 0 2px #FFDF00);
   }
 }
-.skill-cards__btn--js:active .card-icon {
+.skill-card-button--js:active .card-icon {
   fill: #FFDF00;
   -webkit-filter: drop-shadow(0 0 2px #FFDF00);
           filter: drop-shadow(0 0 2px #FFDF00);
 }
 @media (max-width: 450px) {
-  .skill-cards__btn--js .card-icon {
+  .skill-card-button--js .card-icon {
     max-height: 32px;
     width: 32px;
   }
 }
 @media (hover: hover) {
-  .skill-cards__btn--scss:hover .card-icon {
+  .skill-card-button--scss:hover .card-icon {
     fill: #CA669B;
     -webkit-filter: drop-shadow(0 0 2px #CA669B);
             filter: drop-shadow(0 0 2px #CA669B);
   }
 }
-.skill-cards__btn--scss:active .card-icon {
+.skill-card-button--scss:active .card-icon {
   fill: #CA669B;
   -webkit-filter: drop-shadow(0 0 2px #CA669B);
           filter: drop-shadow(0 0 2px #CA669B);
 }
 @media (max-width: 450px) {
-  .skill-cards__btn--scss .card-icon {
+  .skill-card-button--scss .card-icon {
     max-height: 32px;
     width: 32px;
   }
 }
 @media (hover: hover) {
-  .skill-cards__btn--git:hover .card-icon {
+  .skill-card-button--git:hover .card-icon {
     fill: #F25234;
     -webkit-filter: drop-shadow(0 0 2px #F25234);
             filter: drop-shadow(0 0 2px #F25234);
   }
 }
-.skill-cards__btn--git:active .card-icon {
+.skill-card-button--git:active .card-icon {
   fill: #F25234;
   -webkit-filter: drop-shadow(0 0 2px #F25234);
           filter: drop-shadow(0 0 2px #F25234);
 }
 @media (max-width: 450px) {
-  .skill-cards__btn--git .card-icon {
+  .skill-card-button--git .card-icon {
     max-height: 32px;
     width: 32px;
   }
-}
-
-.skill-cards__img {
-  display: inline-block;
-  max-height: 128px;
-}
-
-.card-icon {
-  fill: #F0E3CA;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.skill-cards__title {
-  font-family: "Inconsolata", monospace;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 1.3;
 }
 
 @media (max-width: 450px) {
@@ -952,7 +939,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .skill-cards__btn {
+  .skill-card-button {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -965,10 +952,10 @@ body {
     padding-top: 14px;
     padding-bottom: 14px;
   }
-  .skill-cards__img {
+  .skill-card-button__img {
     max-height: 32px;
   }
-  .skill-cards__title {
+  .skill-card-button__title {
     font-size: 24px;
   }
 }
