@@ -4,6 +4,7 @@ function openCardSkill(event) {
     const card = event.target.closest("[data-card-skill]");
     if (card) {
         card.classList.add("active");
+        document.body.classList.add("active");
     }
 }
 

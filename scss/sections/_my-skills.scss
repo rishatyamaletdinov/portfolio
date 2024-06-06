@@ -47,7 +47,6 @@
     }
 
     &__back{
-        position: absolute;
         color: rgb(255, 255, 255);
         background-color: rgb(34, 85, 179);
         transform: perspective(600px) rotateY(180deg);
@@ -71,7 +70,7 @@
     }
 
     &.active{
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotateY(0deg);
@@ -79,11 +78,11 @@
         min-height: 400px;
         z-index: 3;
 
-        .skill-cards__front{
+        .skill-card-button__front{
             transform: perspective(600px) rotateY(-180deg);
         }
 
-        .skill-cards__back{
+        .skill-card-button__back{
             transform: perspective(600px) rotateY(0deg);
         }
     }
@@ -153,6 +152,18 @@
             }
         }
     }
+}
+
+.skill-card-button__close {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.cross-icon {
 }
 
 @media (max-width:450px) {
