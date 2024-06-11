@@ -76,7 +76,7 @@
         transform: translate(-50%, -50%) rotateY(0deg);
         min-width: 500px;
         min-height: 400px;
-        z-index: 3;
+        z-index: 6;
 
         .skill-card-button__front{
             transform: perspective(600px) rotateY(-180deg);
@@ -194,5 +194,24 @@
         &__title{
             font-size: 24px;
         }
+    }
+}
+
+.fade-block{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    z-index: 5;
+    transform: scale(0);
+    background-color: transparent;
+    transition: background-color 0.2s, transform 0.2s 0s;
+    
+    &.active{
+        transform: scale(1);
+        background-color: $fade-block-color;
+        transition: transform 0s, background-color 0.2s 0.2s;
     }
 }

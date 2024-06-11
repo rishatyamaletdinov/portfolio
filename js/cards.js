@@ -1,4 +1,5 @@
 const sectionSkills = document.querySelector("#section-skills");
+const fadeBlock = document.querySelector("#fadeBlock");
 
 function actionCardSkill(event) {
     const card = event.target.closest("[data-card-skill]");
@@ -7,11 +8,13 @@ function actionCardSkill(event) {
     if (card) {
         card.classList.add("active");
         document.body.classList.add("active");
+        fadeBlock.classList.add("active");
     }
 
     if (closeCross) {
         card.classList.remove("active");
         document.body.classList.remove("active");
+        fadeBlock.classList.remove("active");
     }
 }
 

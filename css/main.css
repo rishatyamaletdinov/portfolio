@@ -816,7 +816,7 @@ body {
           transform: translate(-50%, -50%) rotateY(0deg);
   min-width: 500px;
   min-height: 400px;
-  z-index: 3;
+  z-index: 6;
 }
 .skill-card-button.active .skill-card-button__front {
   -webkit-transform: perspective(600px) rotateY(-180deg);
@@ -980,6 +980,33 @@ body {
     font-size: 24px;
   }
 }
+.fade-block {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 5;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s, -webkit-transform 0.2s 0s;
+  transition: background-color 0.2s, -webkit-transform 0.2s 0s;
+  transition: background-color 0.2s, transform 0.2s 0s;
+  transition: background-color 0.2s, transform 0.2s 0s, -webkit-transform 0.2s 0s;
+}
+.fade-block.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: rgba(21, 127, 32, 0.4235294118);
+  -webkit-transition: background-color 0.2s 0.2s, -webkit-transform 0s;
+  transition: background-color 0.2s 0.2s, -webkit-transform 0s;
+  transition: transform 0s, background-color 0.2s 0.2s;
+  transition: transform 0s, background-color 0.2s 0.2s, -webkit-transform 0s;
+}
+
 .my-works {
   padding: 64px 0;
 }
