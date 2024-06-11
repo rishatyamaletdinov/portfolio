@@ -164,6 +164,10 @@
 }
 
 .cross-icon {
+    stroke: black;
+    transition: 0.75s;
+
+    @include close-cross-hover($close-cross-hover);
 }
 
 @media (max-width:450px) {

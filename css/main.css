@@ -934,6 +934,19 @@ body {
   height: 30px;
 }
 
+.cross-icon {
+  stroke: black;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+@media (hover: hover) {
+  .cross-icon:hover {
+    stroke: red;
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
 @media (max-width: 450px) {
   .my-skills {
     padding: 61px 0;
