@@ -47,9 +47,10 @@
     }
 
     &__back{
-        color: rgb(255, 255, 255);
-        background-color: rgb(34, 85, 179);
+        color: #F0E3CA;
         transform: perspective(600px) rotateY(180deg);
+        background-color: $header-color;
+        backdrop-filter: blur(5px);
     }
 
     &__img{
@@ -164,7 +165,7 @@
 }
 
 .cross-icon {
-    stroke: black;
+    stroke: #F0E3CA;
     transition: 0.75s;
 
     @include close-cross-hover($close-cross-hover);
