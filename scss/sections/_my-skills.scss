@@ -47,7 +47,11 @@
     }
 
     &__back{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #F0E3CA;
+        text-align: center;
         transform: perspective(600px) rotateY(180deg);
         background-color: $header-color;
         backdrop-filter: blur(5px);
@@ -75,7 +79,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotateY(0deg);
-        min-width: 500px;
+        max-width: 500px;
+        width: 90%;
         min-height: 400px;
         z-index: 6;
 
@@ -171,6 +176,15 @@
     @include close-cross-hover($close-cross-hover);
 }
 
+.skill-description{
+    width: 80%;
+    font-size: 22px;
+
+    @media (max-width:450px) {
+        font-size: 18px;
+    }
+}
+
 @media (max-width:450px) {
     .my-skills{
         padding: 61px 0;
@@ -181,12 +195,16 @@
     }
 
     .skill-card-button{
-        flex-direction: row;
-        justify-content: left;
-        max-width: 285px;
-        padding-left: 32px;
-        padding-top: 14px;
-        padding-bottom: 14px;
+        width: 285px;
+        height: 60px;
+        
+        &__front{
+            flex-direction: row;
+            justify-content: left;
+            padding-left: 32px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
 
         &__img {
             max-height: 32px;
