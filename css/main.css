@@ -550,7 +550,7 @@ body {
   width: 629px;
   height: 575px;
   position: relative;
-  background-image: url(../../img/pictures/illustrations-desk.png);
+  background-image: url(../img/pictures/illustrations-desk.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -661,7 +661,7 @@ body {
   }
   .picture-avatar {
     max-width: 100%;
-    background-image: url(../../img/pictures/illustrations-desk-mobile.png);
+    background-image: url(../img/pictures/illustrations-desk-mobile.png);
     height: 350px;
   }
   .hero {
