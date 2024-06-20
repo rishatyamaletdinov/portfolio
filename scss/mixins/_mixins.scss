@@ -31,3 +31,12 @@
         }
     }
 }
+
+@mixin close-cross-hover ($close-cross-hover) {
+    @media (hover:hover){
+        &:hover{
+            stroke: $close-cross-hover;
+            transform: rotate(1turn);
+        }
+    }
+}

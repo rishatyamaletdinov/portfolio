@@ -11,18 +11,6 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-   <script src="./js/burger.js" defer="defer"></script>
-   <script src="./js/cards.js" defer="defer"></script>
-   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer = "defer"></script>
-   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer = "defer"></script>
-   <script src="./js/slider.js" defer = "defer"></script>
-   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer = "defer"></script>
-   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer = "defer"></script>
-   <script src="./js/gsap-animation.js" defer = "defer"></script>
-
 </head>
 
 <body>
@@ -81,13 +69,6 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.72 0.790283C8.45734 0.790283 5.83334 3.52762 5.83334 6.88095C5.83334 8.91962 6.804 10.7303 8.296 11.8356C7.52704 12.4117 6.90375 13.16 6.47609 14.0204C6.04843 14.8808 5.8283 15.8295 5.83334 16.7903C5.83334 18.8303 6.804 20.6396 8.296 21.7449C7.52704 22.3211 6.90375 23.0693 6.47609 23.9297C6.04843 24.7902 5.8283 25.7388 5.83334 26.6996C5.83334 30.0529 8.45734 32.7903 11.72 32.7903C14.9813 32.7903 17.6067 30.0529 17.6067 26.6996V21.5503C18.6378 22.41 19.9375 22.8813 21.28 22.8823C24.5427 22.881 27.1667 20.1436 27.1667 16.7903C27.172 15.8294 26.952 14.8807 26.5243 14.0202C26.0967 13.1597 25.4732 12.4115 24.704 11.8356C25.473 11.2595 26.0963 10.5112 26.5239 9.65083C26.9516 8.79042 27.1717 7.84177 27.1667 6.88095C27.1667 3.52762 24.5427 0.790283 21.28 0.790283H11.72ZM8.04534 6.88095C8.04534 4.75962 9.70134 3.06095 11.72 3.06095H15.3933V10.701H11.72C9.70134 10.701 8.04534 9.00095 8.04534 6.88095ZM21.28 10.6996H17.6067V3.05962H21.28C23.3 3.05962 24.9547 4.75962 24.9547 6.88095C24.9547 9.00095 23.3 10.6996 21.28 10.6996ZM8.04667 16.7903C8.04667 14.6703 9.70267 12.9703 11.7213 12.9703H15.3947V20.6103H11.72C9.7 20.6103 8.04534 18.9103 8.04534 16.7903H8.04667ZM17.6067 16.7903C17.6067 14.6703 19.2627 12.9703 21.2813 12.9703C23.3013 12.9703 24.956 14.669 24.956 16.7903C24.956 18.9103 23.3013 20.6103 21.2813 20.6103C19.2627 20.6103 17.608 18.9116 17.608 16.7903H17.6067ZM8.04667 26.6996C8.04667 24.5796 9.70267 22.881 11.7213 22.881H15.3947V26.6996C15.3947 28.8209 13.7413 30.5196 11.7213 30.5196C9.70267 30.5196 8.04667 28.8209 8.04667 26.6996Z"/>
          </g>
       </symbol>
-
-      <symbol id="cross" viewbox="0 0 24 24">
-         <g>
-            <path d="M18 6L6 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M6 6L18 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-         </g>
-      </symbol>
    </svg>
    <header class="header">
       <div class="container">
@@ -110,10 +91,6 @@
                   </li>
 
                   <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">reviews</a>
-                  </li>
-
-                  <li class="menu__item">
                      <a href="#!" class="menu__ancore-link">contacts</a>
                   </li>
                </ul>
@@ -125,7 +102,7 @@
             <a href="" class="logo">
                <img src="./img/icons/logo.svg" alt="logo">
             </a>
-            <nav class="menu" id="mobile-menu">
+            <nav class="menu">
                <ul class="menu__list">
                   <li class="menu__item">
                      <a href="#!" class="menu__ancore-link">about me</a>
@@ -140,17 +117,11 @@
                   </li>
 
                   <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">reviews</a>
-                  </li>
-
-                  <li class="menu__item">
                      <a href="#!" class="menu__ancore-link">contacts</a>
                   </li>
                </ul>
             </nav>
-            <button class="burger" id="burger">
-               <span class="burger__line" id="burger-line"></span>
-            </button>
+            <button class="burger"></button>
          </div>
       </div>
    </header>
@@ -159,7 +130,7 @@
       <section class="welcome">
          <div class="container">
             <div class="welcome__content">
-               <div class="hero" id="hero-info">
+               <div class="hero">
                   <h1 class="main-title">alexey borisov</h1>
                   <h2 class="main-subtitle">frontend developer</h2>
                   <div class="hero__description">
@@ -200,133 +171,65 @@
          </div>
       </section>
 
-      <section class="my-skills" id="section-skills">
-         <div class="fade-block" id="fadeBlock">
-         </div>
+      <!-- <section class="my-skills">
          <div class="container">
             <div class="my-skills__content">
                <h6 class="context-title">
                   my skills
                </h6>
 
-
-               <div class="skill-cards" >
-                  <button class="skill-card-button skill-card-button--html" data-card-skill>
-                     <span class="skill-card-button__front">
-                        <span class="skill-card-button__img">
-                           <svg class="card-icon">
-                              <use xlink:href = "#html"></use>
-                           </svg>
-                        </span>
-                        <span class="skill-card-button__title">HTML5</span>
+               <div class="skill-cards">
+                  <button class="skill-cards__btn skill-cards__btn--html">
+                     <span class="skill-cards__img">
+                        <svg class="card-icon">
+                           <use xlink:href = "#html"></use>
+                       </svg>
                      </span>
-                     <span class="skill-card-button__back">
-                        <span class="skill-card-button__close" card-close-cross> 
-                           <svg class="cross-icon">
-                              <use xlink:href = "#cross"></use>
-                           </svg>
-                        </span>
-
-                        <p class="skill-description">
-                           My skills in the HTML programming language will help make your website as easy as possible to use.
-                        </p>
-                     </span>
+                     <span class="skill-cards__title">HTML5</span>
                   </button>
 
-                  <button class="skill-card-button skill-card-button--css" data-card-skill>
-                     <span class="skill-card-button__front">
-                        <span class="skill-card-button__img">
-                           <svg class="card-icon">
-                              <use xlink:href = "#css"></use>
-                           </svg>
-                        </span>
-                        <span class="skill-card-button__title">CSS3</span>
+                  <button class="skill-cards__btn skill-cards__btn--css">
+                     <span class="skill-cards__img">
+                        <svg class="card-icon">
+                           <use xlink:href = "#css"></use>
+                       </svg>
                      </span>
-                     <span class="skill-card-button__back">
-                        <span class="skill-card-button__close" card-close-cross> 
-                           <svg class="cross-icon">
-                              <use xlink:href = "#cross"></use>
-                           </svg>
-                        </span>
-
-                        <p class="skill-description">
-                           Using the CSS language, I will make your website so pleasing to the eye that interacting with it will not be the slightest difficulty.
-                        </p>
-                     </span>
+                     <span class="skill-cards__title">CSS3</span>
                   </button>
 
-                  <button class="skill-card-button skill-card-button--js" data-card-skill>
-                     <span class="skill-card-button__front">
-                        <span class="skill-card-button__img">
-                           <svg class="card-icon">
-                              <use xlink:href = "#js"></use>
-                           </svg>
-                        </span>
-                        <span class="skill-card-button__title">JavaScript</span>
+                  <button class="skill-cards__btn skill-cards__btn--js">
+                     <span class="skill-cards__img">
+                        <svg class="card-icon">
+                           <use xlink:href = "#js"></use>
+                       </svg>
                      </span>
-                     <span class="skill-card-button__back">
-                        <span class="skill-card-button__close" card-close-cross> 
-                           <svg class="cross-icon">
-                              <use xlink:href = "#cross"></use>
-                           </svg>
-                        </span>
-
-                        <p class="skill-description">
-                           Knowledge of the JS language in combination with HTML and CSS will allow your web to become animated and meet all the standards of a modern website.
-                        </p>
-                     </span>
+                     <span class="skill-cards__title">JavaScript</span>
                   </button>
 
-                  <button class="skill-card-button skill-card-button--scss" data-card-skill>
-                     <span class="skill-card-button__front">
-                        <span class="skill-card-button__img">
-                           <svg class="card-icon">
-                              <use xlink:href = "#scss"></use>
-                           </svg>
-                        </span>
-                        <span class="skill-card-button__title">SCSS</span>
+                  <button class="skill-cards__btn skill-cards__btn--scss">
+                     <span class="skill-cards__img">
+                        <svg class="card-icon">
+                           <use xlink:href = "#scss"></use>
+                        </svg>
                      </span>
-                     <span class="skill-card-button__back">
-                        <span class="skill-card-button__close" card-close-cross> 
-                           <svg class="cross-icon">
-                              <use xlink:href = "#cross"></use>
-                           </svg>
-                        </span>
-
-                        <p class="skill-description">
-                           My SCSS skills will make code of your website's styles understandable even for a kid and allow other developers in the future to edit your website without any problems or misunderstandings.
-                        </p>
-                     </span>
+                     <span class="skill-cards__title">SCSS</span>
                   </button>
 
-                  <button class="skill-card-button skill-card-button--git" data-card-skill>
-                     <span class="skill-card-button__front">
-                        <span class="skill-card-button__img">
-                           <svg class="card-icon">
-                              <use xlink:href = "#git"></use>
-                           </svg>
-                        </span>
-                        <span class="skill-card-button__title">Git</span>
+                  <button class="skill-cards__btn skill-cards__btn--git">
+                     <span class="skill-cards__img">
+                        <svg class="card-icon">
+                           <use xlink:href = "#git"></use>
+                        </svg>
                      </span>
-                     <span class="skill-card-button__back">
-                        <span class="skill-card-button__close" card-close-cross> 
-                           <svg class="cross-icon">
-                              <use xlink:href = "#cross"></use>
-                           </svg>
-                        </span>
-
-                        <p class="skill-description">
-                           Git will provide access to website development for other devices, allowing other developers to also participate in the development of your website.
-                        </p>
-                     </span>
+                     <span class="skill-cards__title">Git</span>
                   </button>
                </div>
             </div>
          </div>
          </div>
-      </section>
+      </section> -->
 
-      <section class="my-works">
+      <!-- <section class="my-works">
          <div class="container">
             <div class="my-works__content">
                <h6 class="context-title">
@@ -346,7 +249,7 @@
                               HTML, SCSS, JS
                            </p>
                         </div>
-                        <div class="project-card__bottom">
+                        <div class="project-crad__bottom">
                            <P class="project-card__description">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                            </P>
@@ -369,7 +272,7 @@
                               HTML, SCSS, JS
                            </p>
                         </div>
-                        <div class="project-card__bottom">
+                        <div class="project-crad__bottom">
                            <P class="project-card__description">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                            </P>
@@ -392,7 +295,7 @@
                               HTML, SCSS, JS
                            </p>
                         </div>
-                        <div class="project-card__bottom">
+                        <div class="project-crad__bottom">
                            <P class="project-card__description">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                            </P>
@@ -406,81 +309,10 @@
                </div>
             </div>
          </div>
-      </section>
-
-      <section class="reviews">
-         <div class="container">
-            <div class="reviews__content">
-               <h6 class="context-title">
-                  Reviews
-               </h6>
-               <div class="slider">
-                  <div class="slider__slide">
-                     <div class="slider__slide-top">
-                        <span class="img-reviewer-avatar">
-                           <img src="./img/pictures/reviewer-one.png" alt="reviewer-one">
-                        </span>
-                        <div class="reviwer-info">
-                           <span class="reviewer-name">joselu mato</span>
-                           <span class="reviewer-profession">builder</span>
-                        </div>
-                     </div>
-                     <div class="slider__slide-bottom">
-                        <span class="slider-review">I would like to express my deep gratitude to this web developer for his professionalism and talent. We ordered the development of a complex web application, and he coped with the task perfectly. The web developer was attentive to every detail and took into account all our wishes. The result exceeded all our expectations. Thanks for the great job!</span>
-                     </div>
-                  </div>
-
-                  <div class="slider__slide">
-                     <div class="slider__slide-top">
-                        <span class="img-reviewer-avatar">
-                           <img src="./img/pictures/reviewer-two.png" alt="reviewer-two">
-                        </span>
-                        <div class="reviwer-info">
-                           <span class="reviewer-name">antonio rudiger</span>
-                           <span class="reviewer-profession">bodyguard</span>
-                        </div>
-                     </div>
-                     <div class="slider__slide-bottom">
-                        <span class="slider-review">We are very pleased with the work of this web developer. We ordered a small corporate website for our company, and the result exceeded our expectations. The web developer was very responsive and attentive to our requests. He provided us with a high quality product at a reasonable price. I highly recommend his services!</span>
-                     </div>
-                  </div>
-
-                  <div class="slider__slide">
-                     <div class="slider__slide-top">
-                        <span class="img-reviewer-avatar">
-                           <img src="./img/pictures/reviewer-three.png" alt="reviewer-three">
-                        </span>
-                        <div class="reviwer-info">
-                           <span class="reviewer-name">rodrigo</span>
-                           <span class="reviewer-profession">chef</span>
-                        </div>
-                     </div>
-                     <div class="slider__slide-bottom">
-                        <span class="slider-review">This web developer is a true professional in his field. We ordered the development of a complex online store with the integration of payment systems and inventory management. The result exceeded all our expectations. The site not only looks amazing, but also functions flawlessly. Thank you very much for the great job!</span>
-                     </div>
-                  </div>
-
-                  <div class="slider__slide">
-                     <div class="slider__slide-top">
-                        <span class="img-reviewer-avatar">
-                           <img src="./img/pictures/reviewer-four.png" alt="reviewer-four">
-                        </span>
-                        <div class="reviwer-info">
-                           <span class="reviewer-name">jude bellingham</span>
-                           <span class="reviewer-profession">midfielder</span>
-                        </div>
-                     </div>
-                     <div class="slider__slide-bottom">
-                        <span class="slider-review">I would like to express my gratitude to the web developer for the excellent work on our project. The website he designed for our small business exceeded our expectations. Professionalism, attention to detail and quick response to our requests made the cooperation process enjoyable. I recommend his services to anyone looking for quality web development.</span>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
+      </section> -->
    </main>
 
-   <footer class="footer">
+   <!-- <footer class="footer">
       <div class="container">
          <div class="footer__content">
             <div class="text-and-logo">
@@ -554,17 +386,15 @@
                         </li>
                      </ul>
                   </li>
+
+                  
+
+
                </ul>
             </div>
          </div>
       </div>
-   </footer>
+   </footer> -->
 </body>
 
 </html>
-
-<!-- TO DO: -->
-<!-- исправить адаптив скилл-карточек -->
-<!-- адаптировать карточку в активе -->
-<!-- добавить текста в карточки -->
-<!--  -->

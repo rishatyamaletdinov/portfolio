@@ -1,6 +1,57 @@
 .burger{
-    width: 40px;
-    height: 40px;
-    background-color: $text-color;
+    width: 48px;
+    height: 48px;
     z-index: 2;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    &__line{
+        display: inline-block;
+        width: 36px;
+        height: 4px;
+        background-color: $text-color;
+        position: relative;
+        transition: background-color 0.3s 0s;
+
+        &:before,
+        &:after{
+            content: "";
+            display: inline-block;
+            width: 36px;
+            height: 4px;
+            background-color: $text-color;
+            position: absolute;
+            left: 0;
+        }
+
+        &::before{
+            top: -10px;
+            transition: transform 0.3s, top 0.3s 0.3s;
+        }
+
+        &::after{
+            bottom: -10px;
+            transition: transform 0.3s, bottom 0.3s 0.3s;
+        }
+    }
+}
+
+.burger.active{
+    .burger__line::before{
+        top: 0;
+        transform: rotate(45deg);
+        transition: top 0.3s, transform 0.3s 0.3s;
+    }
+
+    .burger__line::after{
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: bottom 0.3s, transform 0.3s 0.3s;
+    }
+
+    .burger__line{
+        background-color: transparent;
+        transition: background-color 0.3s 0s;
+    }
 }

@@ -42,13 +42,9 @@
         width: 629px;
         height: 575px;
         position: relative;
-        background-color: aqua;
-
-        &__img{
-            height: auto;
-            width: auto;
-            object-fit: contain;
-        }
+        background-image: url(../../img/pictures/illustrations-desk.png);
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .picture-avatar__shadow {
@@ -163,16 +159,19 @@
         }
 
         .picture-avatar__shadow{
-            width: 250px;
-            height: 250px;
+            width: 230px;
+            height: 230px;
         }
     }
 
     @media (max-width:450px) {
+        .welcome{
+            padding-bottom: 0;
+        }
         .picture-avatar{
-            width: 100%;
-            // height: auto;
-
+            max-width: 100%;
+            background-image: url(../../img/pictures/illustrations-desk-mobile.png);
+            height: 350px;
         }
 
         .hero{
