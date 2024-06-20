@@ -466,6 +466,11 @@ body {
   display: flex;
   gap: 64px;
 }
+@media (max-width: 950px) {
+  .menu__list {
+    gap: 32px;
+  }
+}
 @media (max-width: 630px) {
   .menu__list {
     -webkit-box-orient: vertical;

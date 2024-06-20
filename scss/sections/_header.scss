@@ -16,14 +16,13 @@
 
     @media (max-width:630px) {
         .container{
-        display: none;
+            display: none;
         }
 
         &__mobile-container{
             display: block;
+        }
     }
-    
-}
 }
 
 .header__content {
@@ -33,7 +32,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     
     @media (max-width: 768px) {
         flex-direction: column;
@@ -68,7 +66,6 @@
 
         &.open {
             transform: translateY(0);
-
         }
     }
 }
@@ -76,6 +73,10 @@
 .menu__list {
     display: flex;
     gap: 64px;
+
+    @media (max-width:950px) {
+        gap: 32px;
+    }
 
     @media (max-width:630px) {
         flex-direction: column;
