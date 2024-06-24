@@ -7,17 +7,54 @@ gsap.from('#hero-info', {
     ease:'bounce',
 }) 
 
+const textElement = document.querySelector('#aboutHeroText');
+const textContent = textElement.textContent;
+textElement.innerHTML = '';
+
+textContent.split('').forEach(letter => {
+    const wrapperForLetter = document.createElement('span');
+    wrapperForLetter.textContent = letter;
+    textElement.appendChild(wrapperForLetter);
+});
+
+gsap.from("#aboutHeroText span",  
+    { 
+    opacity: 0, 
+    scale: 10, 
+    stagger: 0.05,
+    duration: 0.5,
+    scrollTrigger: {
+        // markers: true,
+        trigger: "#aboutMe",
+        start: "top 80%",
+        end: "bottom 50%",
+        scrub: true
+    }
+    }
+);
+
+gsap.from('#pictureLogo',{
+    stagger:0.3,
+    opacity:0,
+    y:200,
+    scrollTrigger:{
+        // markers: true,
+        trigger: '#aboutMe',
+        start: 'top 70%',
+        end:'30% 50%',
+        scrub: 2,
+    }
+})
+
 gsap.from('[data-card-skill]',{
     stagger:0.3,
     opacity:0,
     y:200,
     scrollTrigger:{
-        // markers:true,
         trigger: '#section-skills',
         start: 'top 70%',
         end:'30% 50%',
         scrub: 2,
-        // toggleActions: 'play none none reverse',
     }
 })
 
@@ -26,12 +63,10 @@ gsap.from('[data-card-project]',{
     opacity:0,
     y:200,
     scrollTrigger:{
-        // markers:true,
         trigger: '#project-card-section',
         start: 'top 70%',
         end:'30% 50%',
         scrub: 2,
-        // toggleActions: 'play none none reverse',
     }
 })
 
@@ -40,11 +75,9 @@ gsap.from('[data-slider]',{
     opacity:0,
     y:200,
     scrollTrigger:{
-        // markers:true,
         trigger: '#section-reviews',
         start: 'top 70%',
         end:'30% 50%',
         scrub: 2,
-        // toggleActions: 'play none none reverse',
     }
 })
