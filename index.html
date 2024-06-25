@@ -89,62 +89,32 @@
          </g>
       </symbol>
    </svg>
-   <header class="header">
+   <header class="header" id="header">
       <div class="container">
          <div class="header__content">
-            <a href="" class="logo">
+            <a href="#!" class="logo">
                <img src="./img/icons/logo.svg" alt="logo">
             </a>
-            <nav class="menu">
+            <nav class="menu" id="menu">
                <ul class="menu__list">
                   <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">about me</a>
+                     <a href="#aboutMe" class="menu__ancore-link" data-anchor-link>about me</a>
+                  </li>
+
+                  <li class="menu__item" >
+                     <a href="#sectionSkills" class="menu__ancore-link" data-anchor-link>skills</a>
                   </li>
 
                   <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">skills</a>
+                     <a href="#projects" class="menu__ancore-link" data-anchor-link>pet-projects</a>
                   </li>
 
                   <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">pet-projects</a>
+                     <a href="#sectionReviews" class="menu__ancore-link" data-anchor-link>reviews</a>
                   </li>
 
                   <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">reviews</a>
-                  </li>
-
-                  <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">contacts</a>
-                  </li>
-               </ul>
-            </nav>
-         </div>
-      </div>
-      <div class="header__mobile-container">
-         <div class="header__content">
-            <a href="" class="logo">
-               <img src="./img/icons/logo.svg" alt="logo">
-            </a>
-            <nav class="menu" id="mobile-menu">
-               <ul class="menu__list">
-                  <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">about me</a>
-                  </li>
-
-                  <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">skills</a>
-                  </li>
-
-                  <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">pet-projects</a>
-                  </li>
-
-                  <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">reviews</a>
-                  </li>
-
-                  <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">contacts</a>
+                     <a href="#contacts" class="menu__ancore-link" data-anchor-link>contacts</a>
                   </li>
                </ul>
             </nav>
@@ -198,7 +168,7 @@
          </div>
       </section>
 
-      <section class="my-skills" id="section-skills">
+      <section class="my-skills" id="sectionSkills">
          <div class="fade-block" id="fadeBlock">
          </div>
          <div class="container">
@@ -324,14 +294,14 @@
          </div>
       </section>
 
-      <section class="my-works">
+      <section class="my-works" id="projects">
          <div class="container">
             <div class="my-works__content">
                <h6 class="context-title">
                   My Works
                </h6>
 
-               <div class="row-cards" id="project-card-section">
+               <div class="row-cards">
                   <div class="project-card" data-card-project>
                      <img src="./img/card_portfolio.png" alt="project">
                      <div class="project-card__info">
@@ -406,7 +376,7 @@
          </div>
       </section>
 
-      <section class="reviews" id="section-reviews">
+      <section class="reviews" id="sectionReviews">
          <div class="container">
             <div class="reviews__content">
                <h6 class="context-title">
@@ -478,7 +448,7 @@
       </section>
    </main>
 
-   <footer class="footer">
+   <footer class="footer" id="contacts">
       <div class="container">
          <div class="footer__content">
             <div class="text-and-logo">

@@ -51,7 +51,7 @@ gsap.from('[data-card-skill]',{
     opacity:0,
     y:200,
     scrollTrigger:{
-        trigger: '#section-skills',
+        trigger: '#sectionSkills',
         start: 'top 70%',
         end:'30% 50%',
         scrub: 2,
@@ -63,7 +63,7 @@ gsap.from('[data-card-project]',{
     opacity:0,
     y:200,
     scrollTrigger:{
-        trigger: '#project-card-section',
+        trigger: '#projects',
         start: 'top 70%',
         end:'30% 50%',
         scrub: 2,
@@ -75,7 +75,7 @@ gsap.from('[data-slider]',{
     opacity:0,
     y:200,
     scrollTrigger:{
-        trigger: '#section-reviews',
+        trigger: '#sectionReviews',
         start: 'top 70%',
         end:'30% 50%',
         scrub: 2,
