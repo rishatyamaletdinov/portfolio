@@ -1,4 +1,4 @@
-const sectionSkills = document.querySelector("#section-skills");
+const sectionSkills = document.querySelector("#sectionSkills");
 const fadeBlock = document.querySelector("#fadeBlock");
 
 function actionCardSkill(event) {
