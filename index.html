@@ -89,62 +89,32 @@
          </g>
       </symbol>
    </svg>
-   <header class="header">
+   <header class="header" id="header">
       <div class="container">
          <div class="header__content">
-            <a href="" class="logo">
+            <a href="#!" class="logo">
                <img src="./img/icons/logo.svg" alt="logo">
             </a>
-            <nav class="menu">
+            <nav class="menu" id="menu">
                <ul class="menu__list">
                   <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">about me</a>
+                     <a href="#aboutMe" class="menu__ancore-link" data-anchor-link>about me</a>
+                  </li>
+
+                  <li class="menu__item" >
+                     <a href="#sectionSkills" class="menu__ancore-link" data-anchor-link>skills</a>
                   </li>
 
                   <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">skills</a>
+                     <a href="#projects" class="menu__ancore-link" data-anchor-link>pet-projects</a>
                   </li>
 
                   <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">pet-projects</a>
+                     <a href="#sectionReviews" class="menu__ancore-link" data-anchor-link>reviews</a>
                   </li>
 
                   <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">reviews</a>
-                  </li>
-
-                  <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">contacts</a>
-                  </li>
-               </ul>
-            </nav>
-         </div>
-      </div>
-      <div class="header__mobile-container">
-         <div class="header__content">
-            <a href="" class="logo">
-               <img src="./img/icons/logo.svg" alt="logo">
-            </a>
-            <nav class="menu" id="mobile-menu">
-               <ul class="menu__list">
-                  <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">about me</a>
-                  </li>
-
-                  <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">skills</a>
-                  </li>
-
-                  <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">pet-projects</a>
-                  </li>
-
-                  <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">reviews</a>
-                  </li>
-
-                  <li class="menu__item">
-                     <a href="#!" class="menu__ancore-link">contacts</a>
+                     <a href="#contacts" class="menu__ancore-link" data-anchor-link>contacts</a>
                   </li>
                </ul>
             </nav>
@@ -156,43 +126,41 @@
    </header>
 
    <main class="main">
-      <section class="welcome">
+      <section class="welcome" id="welcome">
          <div class="container">
             <div class="welcome__content">
                <div class="hero" id="hero-info">
-                  <h1 class="main-title">alexey borisov</h1>
+                  <h1 class="main-title" id="mainTitle">Rishat Yamaletdinov</h1>
                   <h2 class="main-subtitle">frontend developer</h2>
                   <div class="hero__description">
-                     <span class="hero__text">
-                        Frontend developer looking for ideas and projects for himself and others
+                     <span class="hero__text" id="heroText">
+                        From Idea to Reality: Your Project — My Next Victory!
                      </span>
                   </div>
                </div>
 
-               <div class="picture-avatar">
-                  <div class="picture-avatar__shadow picture-avatar__shadow--first">
+               <div class="picture-avatar" >
+                  <div class="picture-avatar__shadow picture-avatar__shadow--first" id="picture-avatar-photo">
                      <img src="./img/pictures/cat-portrait.jpg" alt="">
                   </div>
-                  <div class="picture-avatar__shadow picture-avatar__shadow--second"></div>
-                  <div class="picture-avatar__shadow picture-avatar__shadow--third"></div>
+                  <div class="picture-avatar__shadow picture-avatar__shadow--second " id="picture-avatar-one"></div>
+                  <div class="picture-avatar__shadow picture-avatar__shadow--third" id="picture-avatar-two"></div>
                </div>
             </div>
          </div>
       </section>
 
-      <section class="about-me">
+      <section class="about-me" id="aboutMe">
          <div class="container">
             <div class="about-me__content">
-               <div class="picture-logo">
+               <div class="picture-logo" id="pictureLogo">
                   <img src="./img/icons/picture-logo.svg" alt="icon">
                </div>
 
-               <div class="about-hero">
+               <div class="about-hero" >
                   <div class="about-hero__description">
-                     <span class="about-hero__text">
-                        A few years ago, I became interested in developing websites and interfaces. Since then, I have
-                        been steadily improving my skills. Now I am developing websites and web applications to order or
-                        for myself.
+                     <span class="about-hero__text" id="aboutHeroText">
+                        A few years ago, I became interested in developing websites and interfaces. Now I am developing websites and web applications to order or for myself. Since then, I have been steadily improving my skills.
                      </span>
                   </div>
                </div>
@@ -200,7 +168,7 @@
          </div>
       </section>
 
-      <section class="my-skills" id="section-skills">
+      <section class="my-skills" id="sectionSkills">
          <div class="fade-block" id="fadeBlock">
          </div>
          <div class="container">
@@ -326,7 +294,7 @@
          </div>
       </section>
 
-      <section class="my-works">
+      <section class="my-works" id="projects">
          <div class="container">
             <div class="my-works__content">
                <h6 class="context-title">
@@ -334,7 +302,7 @@
                </h6>
 
                <div class="row-cards">
-                  <div class="project-card">
+                  <div class="project-card" data-card-project>
                      <img src="./img/card_portfolio.png" alt="project">
                      <div class="project-card__info">
                         <div class="project-card__top">
@@ -357,7 +325,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="project-card">
+                  <div class="project-card" data-card-project>
                      <img src="./img/card_portfolio.png" alt="project">
                      <div class="project-card__info">
                         <div class="project-card__top">
@@ -380,7 +348,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="project-card">
+                  <div class="project-card" data-card-project>
                      <img src="./img/card_portfolio.png" alt="project">
                      <div class="project-card__info">
                         <div class="project-card__top">
@@ -408,13 +376,13 @@
          </div>
       </section>
 
-      <section class="reviews">
+      <section class="reviews" id="sectionReviews">
          <div class="container">
             <div class="reviews__content">
                <h6 class="context-title">
                   Reviews
                </h6>
-               <div class="slider">
+               <div class="slider"  data-slider>
                   <div class="slider__slide">
                      <div class="slider__slide-top">
                         <span class="img-reviewer-avatar">
@@ -480,7 +448,7 @@
       </section>
    </main>
 
-   <footer class="footer">
+   <footer class="footer" id="contacts">
       <div class="container">
          <div class="footer__content">
             <div class="text-and-logo">
@@ -564,7 +532,5 @@
 </html>
 
 <!-- TO DO: -->
-<!-- исправить адаптив скилл-карточек -->
-<!-- адаптировать карточку в активе -->
-<!-- добавить текста в карточки -->
-<!--  -->
+<!-- пофиксить шапку сайта. убрать мобильный контейнер? -->
+<!-- пофиксить проектные карточки на мобильном адаптиве -->

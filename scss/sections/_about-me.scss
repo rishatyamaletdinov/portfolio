@@ -11,6 +11,7 @@
 
 .about-hero {
     max-width: 904px;
+    
 }
 
 .about-hero__text {
@@ -26,9 +27,6 @@
 }
 
 @media (max-width:768px) {
-    // .about-hero{
-    //     max-width: 443px;
-    // }
     .about-hero__description{
         max-width:100%;
     }

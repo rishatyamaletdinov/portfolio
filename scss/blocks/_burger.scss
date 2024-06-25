@@ -1,10 +1,14 @@
 .burger{
+    display: none;
     width: 48px;
     height: 48px;
     z-index: 2;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+
+    @media (max-width:630px) {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     &__line{
         display: inline-block;
