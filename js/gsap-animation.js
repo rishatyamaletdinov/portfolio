@@ -125,3 +125,29 @@ function paralax() {
 }
 
 paralax()
+
+gsap.from('[data-contacts]', 
+{
+    opacity: 0,
+    duration: 1,
+
+    scrollTrigger:{
+        trigger: '#contacts',
+        start: '80% 95%',
+        end:'80% 95%',
+        scrub: 2,
+    }
+})
+
+gsap.from('#footerTextAndLogo', 
+{
+    x: -1000,
+    opacity: 0,
+
+    scrollTrigger:{
+        trigger: '#contacts',
+        start: '60% 90%',
+        end:'60% 90%',
+        scrub: 2,
+    }
+})
