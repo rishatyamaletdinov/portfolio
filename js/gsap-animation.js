@@ -128,13 +128,12 @@ paralax()
 
 gsap.from('[data-contacts]', 
 {
-    opacity: 0,
-    duration: 1,
+    x:1000,
 
     scrollTrigger:{
         trigger: '#contacts',
-        start: '80% 95%',
-        end:'80% 95%',
+        start: '60% 90%',
+        end:'60% 90%',
         scrub: 2,
     }
 })

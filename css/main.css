@@ -1073,6 +1073,7 @@ body {
 }
 .footer {
   padding: 64px 0;
+  overflow: hidden;
 }
 .footer .logo {
   max-width: 165px;
