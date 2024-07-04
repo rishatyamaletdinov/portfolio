@@ -1369,6 +1369,10 @@ body {
   gap: 16px;
 }
 
+.form__item {
+  position: relative;
+}
+
 .form__field {
   width: 100%;
   padding: 8px 5px;
@@ -1376,10 +1380,34 @@ body {
   outline: none;
 }
 
+.form__fake-placeholder {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.form__fake-placeholder--message {
+  top: 16px;
+}
+.form__fake-placeholder.focus {
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  font-size: 12px;
+  opacity: 50%;
+}
+
 .form__field--message {
   resize: none;
   height: 35px;
   overflow: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.form__field--message:focus {
+  height: 300px;
 }
 
 .agreement-checkbox-wrap {

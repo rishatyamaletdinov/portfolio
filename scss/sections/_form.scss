@@ -21,7 +21,7 @@
 
 }
 .form__item {
-
+    position: relative;
 }
 .form__field {
     // background-color: aqua;
@@ -31,11 +31,34 @@
     outline: none;
 }
 .form__fake-placeholder {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+
+    &--message{
+        top: 16px;
+    }
+
+    &.focus{
+        transform: translateY(-200%);
+        font-size: 12px;
+        opacity: 50%;
+    }
 }
+
+
+
 .form__field--message {
     resize: none;
     height: 35px;
     overflow: auto;
+    transition: 0.5s;
+
+    &:focus {
+        height: 300px;
+    }
 }
 
 .agreement-checkbox-wrap{

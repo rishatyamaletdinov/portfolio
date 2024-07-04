@@ -22,6 +22,7 @@
    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer = "defer"></script>
    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer = "defer"></script>
    <script src="./js/gsap-animation.js" defer = "defer"></script>
+   <script src="./js/placeholder-animation.js" defer = "defer"></script>
 
 </head>
 
@@ -450,25 +451,25 @@
       <section class="application">
          <div class="container">
             <div class="application__content">
-               <form class="form" action="">
+               <form class="form" action="" id="form">
                   <ul class="form__items-list">
-                     <li class="form__item">
-                        <input class="form__field" type="text">
-                        <!-- <span class="form__fake-placeholder">
+                     <li class="form__item" data-form-item>
+                        <input class="form__field" type="text" data-input-field>
+                        <span class="form__fake-placeholder" data-fake-placeholder>
                            Name
-                        </span> -->
+                        </span>
                      </li>
-                     <li class="form__item">
-                        <input class="form__field" type="text">
-                        <!-- <span class="form__fake-placeholder">
-                           Name
-                        </span> -->
+                     <li class="form__item" data-form-item>
+                        <input class="form__field" type="text" data-input-field>
+                        <span class="form__fake-placeholder" data-fake-placeholder>
+                           Email
+                        </span>
                      </li>
-                     <li class="form__item">
-                        <textarea class="form__field form__field--message" name="" id=""></textarea>
-                        <!-- <span class="form__fake-placeholder">
-                           Name
-                        </span> -->
+                     <li class="form__item" data-form-item>
+                        <textarea class="form__field form__field--message" name="" id="" data-input-field></textarea>
+                        <span class="form__fake-placeholder form__fake-placeholder--message" data-fake-placeholder>
+                           Message
+                        </span>
                      </li>
                   </ul>
 
