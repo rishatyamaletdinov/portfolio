@@ -116,6 +116,53 @@
     text-transform: capitalize;
 }
 
+
+
+// turning yellow bg for autofill off
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border-bottom: 2px solid $context-title; 
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px $card-color inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+// erorr message styles
+
+.form__item li {
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    list-style: none;
+    left: 50%;
+}
+
+.error-wrapper {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    list-style: none;
+}
+
+.error {
+    color: #b40202;
+}
+
+.form__field.error{
+    color: white;
+}
+
+// submit button
+
 .submit-button{
     display: inline-block;
     position: relative;
@@ -132,4 +179,26 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+}
+
+.disabled {
+    background-color: gray;
+    border: 2px solid gray;
+    opacity: 0.6;
+}
+
+.disabled:hover {
+    background-color: gray;
+    border: 2px solid gray;
+    box-shadow: none;
+    cursor: default;
+}
+
+// success answer
+
+.success {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: green;
 }
