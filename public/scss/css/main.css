@@ -309,7 +309,7 @@ body {
   display: none;
   width: 48px;
   height: 48px;
-  z-index: 2;
+  z-index: 1;
 }
 @media (max-width: 630px) {
   .burger {
@@ -392,7 +392,7 @@ body {
           backdrop-filter: blur(5px);
 }
 .header .logo {
-  z-index: 5;
+  z-index: 1;
   display: inline-block;
   max-width: 146px;
 }
@@ -496,6 +496,7 @@ body {
 
 .welcome {
   padding: 150.5px 0 72.5px;
+  overflow: hidden;
 }
 
 .welcome__content {
@@ -1072,11 +1073,16 @@ body {
 }
 .footer {
   padding: 64px 0;
+  overflow: hidden;
 }
 .footer .logo {
   max-width: 165px;
+  display: inline-block;
   margin-bottom: 20px;
   padding-top: 5px;
+}
+.footer .logo img {
+  height: auto;
 }
 .footer .context-title {
   margin-bottom: 16px;
@@ -1337,4 +1343,172 @@ body {
 
 .slick-active button {
   background-color: #fff;
+}
+
+.application {
+  padding: 64px 0;
+}
+
+.form {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 30px 16px;
+  background-color: #2b2828;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.form__items-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.form__item {
+  position: relative;
+}
+
+.form__field {
+  width: 100%;
+  padding: 8px 5px;
+  border-bottom: 2px solid #157F1F;
+  outline: none;
+}
+
+.form__fake-placeholder {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.form__fake-placeholder--message {
+  top: 16px;
+}
+.form__fake-placeholder.focus {
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  font-size: 12px;
+  opacity: 50%;
+}
+
+.form__field--message {
+  resize: none;
+  height: 35px;
+  overflow: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.form__field--message:focus {
+  height: 300px;
+}
+
+.agreement-checkbox-wrap {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+.agreement-checkbox-wrap a {
+  color: #157F1F;
+  text-decoration: underline;
+  text-decoration-color: #157F1F;
+}
+
+.agreement-checkbox-real {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.agreement-checkbox-custom {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #157F1F;
+  border-radius: 4px;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+.agreement-checkbox-custom::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-image: url("../../img/icons/galochka.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  margin-top: 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.agreement-checkbox-real:checked + .agreement-checkbox-custom::before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.privacy-policy-link {
+  text-transform: capitalize;
+}
+
+.submit-button {
+  display: inline-block;
+  position: relative;
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  background-color: #157F1F;
+  border-radius: 10px;
+}
+
+.submit-input {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  /* border-bottom: none; */
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: transparent;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.error-wrapper {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  list-style: none;
+}
+
+.error {
+  color: #ec0505;
 }/*# sourceMappingURL=main.css.map */

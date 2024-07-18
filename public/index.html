@@ -22,6 +22,9 @@
    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer = "defer"></script>
    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer = "defer"></script>
    <script src="./js/gsap-animation.js" defer = "defer"></script>
+   <script src="./js/placeholder-animation.js" defer = "defer"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer = "defer"></script>
+   <script src="./js/validation.js" defer = "defer"></script>
 
 </head>
 
@@ -446,12 +449,54 @@
             </div>
          </div>
       </section>
+
+      <section class="application">
+         <div class="container">
+            <div class="application__content">
+               <form class="form" action="" id="form">
+                  <ul class="form__items-list">
+                     <li class="form__item" data-form-item>
+                        <input class="form__field" type="text" data-input-field name="name">
+                        <span class="form__fake-placeholder" data-fake-placeholder>
+                           Name
+                        </span>
+                     </li>
+                     <li class="form__item" data-form-item>
+                        <input class="form__field" type="text" data-input-field name="email">
+                        <span class="form__fake-placeholder" data-fake-placeholder>
+                           Email
+                        </span>
+                     </li>
+                     <li class="form__item" data-form-item>
+                        <textarea class="form__field form__field--message" name="" id="" data-input-field name="message"></textarea>
+                        <span class="form__fake-placeholder form__fake-placeholder--message" data-fake-placeholder>
+                           Message
+                        </span>
+                     </li>
+                  </ul>
+
+                  <label class="agreement-checkbox-wrap">
+                     <input type="checkbox" name="privacy-policy-agreement" class="agreement-checkbox-real" id="checkbox">
+                     <span class="agreement-checkbox-custom"></span>
+                     I have read and agree to the processing of my
+                     <a href="https://www.consultant.ru/document/cons_doc_LAW_61801/" class="privacy-policy-link">personal data</a>
+                  </label>
+                  
+                  <label class="submit-button disabled" id="submit" disabled>
+                     <input type="submit" value="Submit" class="submit-input"  >
+                  </label>
+
+               </form>
+               <div class="answer" id="answer"></div>
+            </div>
+         </div>
+      </section>
    </main>
 
    <footer class="footer" id="contacts">
       <div class="container">
          <div class="footer__content">
-            <div class="text-and-logo">
+            <div class="text-and-logo" id="footerTextAndLogo">
                <a href="" class="logo">
                   <img src="./img/icons/logo.svg" alt="logo">
                </a>
@@ -465,7 +510,7 @@
                </h6>
 
                <ul class="socials">
-                  <li class="socials__item">
+                  <li class="socials__item" data-contacts>
                      <ul class="socials__list-links">
                         <li class="socials__link-holder">
                      <a href="" class="socials__link">
@@ -494,7 +539,7 @@
                         </li>
                      </ul>
                   </li>
-                  <li class="socials__item">
+                  <li class="socials__item" data-contacts>
                      <ul class="socials__list-links">
                         <li class="socials__link-holder">
                      <a href="" class="socials__link">

@@ -1,0 +1,204 @@
+.application {
+    padding: 64px 0;
+}
+
+.application__content {
+
+}
+
+.form {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 30px 16px;
+    background-color: $card-color;
+    border-radius: 15px;
+    text-align: center;
+}
+.form__items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.form__item {
+    position: relative;
+}
+.form__field {
+    // background-color: aqua;
+    width: 100%;
+    padding: 8px 5px;
+    border-bottom: 2px solid $context-title;
+    outline: none;
+}
+.form__fake-placeholder {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+
+    &--message{
+        top: 16px;
+    }
+
+    &.focus{
+        transform: translateY(-200%);
+        font-size: 12px;
+        opacity: 50%;
+    }
+}
+
+.form__field--message {
+    resize: none;
+    height: 35px;
+    overflow: auto;
+    transition: 0.5s;
+
+    &:focus {
+        height: 300px;
+    }
+}
+
+.agreement-checkbox-wrap{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 32px;
+
+    a{
+        color: $context-title;
+        text-decoration: underline;
+        text-decoration-color: $context-title;
+    }
+}
+
+.agreement-checkbox-real {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+.agreement-checkbox-custom {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $context-title;
+    border-radius: 4px;
+    vertical-align: sub;
+    margin-right: 5px;
+    
+}
+
+.agreement-checkbox-custom::before{
+    content: '';
+
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url("../../img/icons/galochka.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    margin-top: 1px;
+    transition: 0.2s;
+}
+
+.agreement-checkbox-real:checked + .agreement-checkbox-custom::before{
+    transform: translate(-50%, -50%) scale(1);
+}
+.privacy-policy-link{
+    
+    text-transform: capitalize;
+}
+
+
+
+// turning yellow bg for autofill off
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border-bottom: 2px solid $context-title; 
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px $card-color inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+// erorr message styles
+
+.form__item li {
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    list-style: none;
+    left: 50%;
+}
+
+.error-wrapper {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    list-style: none;
+}
+
+.error {
+    color: #b40202;
+}
+
+.form__field.error{
+    color: white;
+}
+
+// submit button
+
+.submit-button{
+    display: inline-block;
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+    height: 50px;
+    background-color: $context-title;
+    border-radius: 10px;
+    
+}
+
+.submit-input{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.disabled {
+    background-color: gray;
+    border: 2px solid gray;
+    opacity: 0.6;
+}
+
+.disabled:hover {
+    background-color: gray;
+    border: 2px solid gray;
+    box-shadow: none;
+    cursor: default;
+}
+
+// success answer
+
+.success {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: green;
+}

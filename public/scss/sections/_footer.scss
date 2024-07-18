@@ -1,9 +1,15 @@
 .footer {
     padding: 64px 0  ;
+    overflow: hidden;
     .logo {
         max-width: 165px;
+        display: inline-block;
         margin-bottom: 20px;
         padding-top: 5px;
+
+        img {
+            height: auto;
+        }
     }
     .context-title {
         margin-bottom: 16px;
