@@ -1467,6 +1467,48 @@ body {
   text-transform: capitalize;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 2px solid #157F1F;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #2b2828 inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form__item li {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
+  list-style: none;
+  left: 50%;
+}
+
+.error-wrapper {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  list-style: none;
+}
+
+.error {
+  color: #b40202;
+}
+
+.form__field.error {
+  color: white;
+}
+
 .submit-button {
   display: inline-block;
   position: relative;
@@ -1485,30 +1527,23 @@ body {
   left: 50%;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  /* border-bottom: none; */
-  -webkit-text-fill-color: #fff;
-  -webkit-box-shadow: transparent;
-  -webkit-transition: background-color 5000s ease-in-out 0s;
-  transition: background-color 5000s ease-in-out 0s;
+.disabled {
+  background-color: gray;
+  border: 2px solid gray;
+  opacity: 0.6;
 }
 
-.error-wrapper {
-  position: absolute;
-  bottom: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  list-style: none;
+.disabled:hover {
+  background-color: gray;
+  border: 2px solid gray;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: default;
 }
 
-.error {
-  color: #ec0505;
+.success {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: green;
 }/*# sourceMappingURL=main.css.map */
